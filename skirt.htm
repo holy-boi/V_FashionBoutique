@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+  <title>VIOLET About</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+       
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    
+    /* Banner Section */
+    .banner-section {
+      font-family: Arial, sans-serif;
+        position: relative;
+        width: 100%;
+        height: 300px; /* Adjust as needed for your design */
+        background: url('images/purple-logo.png') no-repeat center center/cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-slide {
+        position: absolute;
+        opacity: 0;
+        animation: slideInOut 15s linear infinite;
+        text-align: center;
+    }
+    
+    .text-slide h2 {
+        font-size: 2rem;
+        color: #f1db25;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    /* Animation for sliding text */
+    @keyframes slideInOut {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        10% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        30% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        40% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    /* Control the timing for each text slide */
+    .text-slide:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    .text-slide:nth-child(2) {
+        animation-delay: 5s;
+    }
+    
+    .text-slide:nth-child(3) {
+        animation-delay: 10s;
+    }
+    
+    /* Responsive adjustments */
+    @media (min-width: 768px) {
+        .banner-section {
+            height: 400px;
+        }
+        .text-slide h2 {
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .banner-section {
+            height: 500px;
+        }
+        .text-slide h2 {
+            font-size: 3rem;
+        }
+    }
+        </style>
+  <style>
+    /* Global styles */
+    .cloth-display {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Start with 2 columns */
+        gap: 15px;
+        padding: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .item {
+        background-color: #6A0572;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .info {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .info h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .info p {
+        margin: 5px 0;
+        color: #f1db25;
+    }
+
+    .price {
+        color: #f1db25;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .item:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 600px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for small desktops */
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            grid-template-columns: repeat(5, 1fr); /* 5 columns for larger screens */
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            grid-template-columns: repeat(6, 1fr); /* 6 columns for extra-large screens */
+        }
+    }
+</style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="images/hero-bg.jpg" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                No. 5 Alozie St. Off Eyimba, Aba,Nigeria
+              </span>
+            </a>
+            <a href="tel: +234 8063904779" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +234 8063904779
+              </span>
+            </a>
+            <a href="mailto: nwigwevio@gmail.com" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                nwigwevio@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Violet Fashion Boutique
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"> Services </a>
+                </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                    <a class="dropdown-item" href="top.htm">Tops</a>
+                    <a class="dropdown-item" href="skirt.htm">Skirts</a>
+                    <a class="dropdown-item" href="gown.htm">Gowns</a>
+                    <a class="dropdown-item" href="trouser.htm">Trousers</a>
+                    <a class="dropdown-item" href="other.htm">Others</a>
+                </div>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in/up</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <section class="banner-section">
+    <div class="banner-content">
+        <div class="text-slide">
+            <h2>Welcome to Violet Fashion Boutique</h2>
+        </div>
+        <div class="text-slide">
+            <h2>Explore Our Latest Collections</h2>
+        </div>
+        <div class="text-slide">
+            <h2>Contact Us for Exclusive Deals</h2>
+        </div>
+    </div>
+</section>
+  <!-- about section -->
+
+  <section class="cloth-display">
+    <div class="container2">
+        <!-- Example of 40 images with info -->
+        <div class="item">
+            <img src="images/skirts/27.png" alt="Clothing item 1">
+            <div class="info">
+                <h2>Item 1</h2>
+                <p class="price">N 9,000.00</p>
+                <p> Demure Skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/16.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p> Short fray skirts.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/45.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 22,500.00</p>
+                <p>Jean Up and skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/44.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 6,000.00</p>
+                <p>Trendy up and skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/43.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 5,000.00</p>
+                <p>Lacra adjustible skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/42.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 12,000.00</p>
+                <p>Jean skirt with combats</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/41.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 12,000.00</p>
+                <p>Jean skirts</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/40.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11,000.00</p>
+                <p>Jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/39.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,000.00</p>
+                <p>Fray hot jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/38.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p>Hot jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/37.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,000.00</p>
+                <p>Madam slide open jean skirt/p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/36.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 14,000.00</p>
+                <p>Combat mini jean</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/35.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,000.00</p>
+                <p>Nice Fray finest quality gown</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/28.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11, 000.00</p>
+                <p>Hot combat</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/34.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 8,500.00</p>
+                <p>Madam all round skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/33.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11,000.00</p>
+                <p>Ash jean, both for ladies and mamas</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/32.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p>Mini hottie.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/31.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 8,500.00</p>
+                <p>Jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/30.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 10,000.00</p>
+                <p>Glowing fray jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/27.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,500.00</p>
+                <p>Madam jean skirts</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/29.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,000.00</p>
+                <p>Jean skirts.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/26.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 10,500.00</p>
+                <p>Madam jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/25.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,000.00</p>
+                <p>Madam jean skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/24.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 7,500.00</p>
+                <p>Up and down skirt</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/23.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 8,000.00</p>
+                <p>Skirt and blowse- designers</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/22.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,500.00</p>
+                <p>Skirt and blowse with side rope</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/21.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 5,500.00</p>
+                <p>Leather skirts.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/20.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p>Hot skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/19.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11,000.00</p>
+                <p>Hot skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/18.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 14,500.00</p>
+                <p>Skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/17.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 5,000.00</p>
+                <p>Hot Coperate skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/15.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 6,500.00</p>
+                <p>Million material skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/16.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p>Printing fray skirts with belts.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/9.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,500.00</p>
+                <p>printing fray skirts.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/4.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 12,000.00</p>
+                <p>Coperate long skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/15.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 6,500.00</p>
+                <p>Million material skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/14.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11,000.00</p>
+                <p>Skirts and blowse coperate.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/13.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 13,500.00</p>
+                <p>Hot skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/12.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,000.00</p>
+                <p>Hottie fashion trend.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/11.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 12,000.00</p>
+                <p>Coperate Skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/10.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 8,500.00</p>
+                <p>Coperate skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/8.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 11,500.00</p>
+                <p>Sexy long skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/6.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 7,500.00</p>
+                <p>Fine Wool gown.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/7.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 9,000.00</p>
+                <p>Madam jean skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/5.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 7,500.00</p>
+                <p>Skirt and blowse.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/3.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 10,000.00</p>
+                <p>Short Coperate skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/2.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 4,500.00</p>
+                <p>Moderate fine material skirt.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/skirts/1.png" alt="Clothing item 2">
+            <div class="info">
+                <h2>Item 2</h2>
+                <p class="price">N 6,500.00</p>
+                <p>Skirt and blowsee.</p>
+            </div>
+        </div>
+        <!-- Repeat for 40 items -->
+        <!-- More items... -->
+    </div>
+    </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+              <span style="color: #f1db25;">
+                VIOLET F-Boutique
+              </span>
+            </a>
+            <p>
+             This website is dedicated in celebration of my mom's 2024 birthday, honoring HER strength, love, and unwavering inspiration.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5 style="color: #f1db25;">
+              How To Use
+            </h5>
+            <p>
+              Use the category menu at the top of the website to navigate. Each category is displayed in sections below. On phones, swipe right to blowse; on PCs, use the ash-colored slider below the images. click "View More"for additional options.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5 style="color: #f1db25;">
+              Contact Us
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+               No 12 Alozie St. Eyimba Off Ariria Int'l Market, Osisioma L.G.A.  Aba, Abia State. Nigeria.
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                <a href="tel:+234 8063904779">
+                  Call Us: +234 8063904779
+                </a>
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                <a href="mailto:nwigwevio@gmail.com">
+                  Email Us: nwigwevio@gmail.com
+                </a>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5 style="color: #f1db25;">
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+      <a href="https://html.design/" style="color: #f1db25;">HOLIBOI</a> 
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Banner with Rotating Text</title>
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Banner Section */
+.banner-section {
+  font-family: Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed for your design */
+    background: url('purple-logo.png') no-repeat center center/cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-slide {
+    position: absolute;
+    opacity: 0;
+    animation: slideInOut 15s linear infinite;
+    text-align: center;
+}
+
+.text-slide h2 {
+    font-size: 2rem;
+    color: #f1db25;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Animation for sliding text */
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Control the timing for each text slide */
+.text-slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text-slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.text-slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .banner-section {
+        height: 400px;
+    }
+    .text-slide h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner-section {
+        height: 500px;
+    }
+    .text-slide h2 {
+        font-size: 3rem;
+    }
+}
+    </style>
+</head>
+<body>
+   
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="banner-content">
+            <div class="text-slide">
+                <h2>Welcome to Violet Fashion Boutique</h2>
+            </div>
+            <div class="text-slide">
+                <h2>Explore Our Latest Collections</h2>
+            </div>
+            <div class="text-slide">
+                <h2>Contact Us for Exclusive Deals</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the content -->
+</body>
+</html>

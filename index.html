@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+  <title>VIOLET Trends</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .this-brand-section {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+    @media (min-width: 768px) {
+    .brand-section {
+        padding-top: 30px; /* Increased padding-top for larger screens */
+    }
+}
+
+/* Ensure no overlap on mobile */
+@media (max-width: 600px) {
+    .image-container {
+        gap: 15px; /* Reducing the gap to prevent overlap */
+    }
+
+    .item-text {
+        font-size: 0.9rem; /* Adjusting text size */
+    }
+}
+    .brand-section {
+        text-align: center;
+        background-color: #6A0572;
+        padding: auto auto;
+        padding-top: auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 98%;
+        margin: auto;
+        position: relative;
+    }
+
+    .brand-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .brand-header img.logo {
+        max-width: 100px;
+        width: auto;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 25%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .brand-header h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .circle:hover {
+        transform: scale(1.1);
+    }
+
+    .item-text {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+    }
+
+    .item-text:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: #f1db25;
+        top: -5px;
+        left: 25%;
+    }
+
+    /* Responsive adjustments */
+    @media (min-width: 600px) {
+        .circle {
+            width: 120px;
+            height: 120px;
+        }
+
+        .item-text {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .circle {
+            width: 140px;
+            height: 140px;
+        }
+
+        .item-text {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .circle {
+            width: 150px;
+            height: 150px;
+        }
+
+        .item-text {
+            font-size: 1.3rem;
+        }
+    }
+</style>
+  <style> 
+    .carousel-section {
+        font-family: 'Raleway', sans-serif;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        
+    }
+     .carousel-wrapper {
+        width: 100%; /* Full width for each carousel */
+        max-width: 1200px;
+        margin-bottom: 10px; /* Space between carousels */
+    }
+
+    .carousel-container {
+position: relative;
+width: 100%;
+overflow: hidden;
+border-radius: 15px;
+background-color: #6A0572;
+padding: 20px;
+box-sizing: border-box;
+}
+
+    .carousel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+    }
+
+    .carousel-header h2 {
+      font-family: 'Playfair Display', serif;
+font-size: 1.5rem;
+color: #ffffff;
+margin: 0;
+}
+
+    .carousel-header .slide-text {
+font-size: 1rem;
+color: #ffffff;
+margin: 0;
+text-align: right;
+}
+
+    .carousel-description {
+font-size: 0.9rem;
+color: #ffffff;
+margin-bottom: 10px;
+text-align: justify;
+line-height: 1.2;
+}
+
+    .carousel-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+   .carousel img,
+.view-more {
+width: 100%;
+max-width: 220px;
+height: 330px;
+object-fit: cover;
+flex-shrink: 0;
+margin-right: 15px;
+border-radius: 10px;
+box-sizing: border-box;
+margin-right: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+.carousel img,
+.view-more {
+    max-width: 150px; /* Adjust for smaller screens */
+    height: 270px; /* Maintain the taller height */
+}
+.prev-btn,
+.next-btn {
+    padding: 8px 16px;
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 480px) {
+.carousel img,
+.view-more {
+    max-width: 100px; /* Adjust for smallest screens */
+    height: 150px; /* Maintain the taller height */
+}
+    .prev-btn,
+.next-btn {
+    padding: 6px 12px;
+    font-size: 1rem;
+}
+}
+
+    .carousel img:hover {
+        transform: scale(1.05);
+    }
+
+    .view-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007BFF;
+        padding: 15px 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .view-more:hover {
+        background-color: #0056b3;
+    }
+
+    .prev-btn,
+    .next-btn {
+        position: absolute;
+        bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .carousel-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .carousel-header .slide-text {
+            font-size: 0.875rem;
+        }
+
+        .prev-btn,
+        .next-btn {
+            padding: 8px 16px;
+            font-size: 1.2rem;
+        }
+
+        .carousel img,
+        .view-more {
+            max-width: 150px;
+            margin-right: 10px;
+            height: 150px; /* Ensure same height for responsive views */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .carousel-header h2 {
+            font-size: 1.25rem;
+        }
+
+        .carousel-header .slide-text {
+            font-size: 0.75rem;
+        }
+
+        .prev-btn,
+        .next-btn {
+            padding: 6px 12px;
+            font-size: 1rem;
+        }
+
+        .carousel img,
+        .view-more {
+            max-width: 100px;
+            margin-right: 5px;
+            height: 100px; /* Ensure same height for smaller screens */
+        }
+    }
+</style>
+
+  
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="images/hero-bg.jpg" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                No. 5 Alozie St. Off Eyimba, Aba,Nigeria
+              </span>
+            </a>
+            <a href="tel: +234 8063904779" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +234 8063904779
+              </span>
+            </a>
+            <a href="mailto: nwigwevio@gmail.com" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                nwigwevio@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Violet Fashion Boutique
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"> Services </a>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                      <a class="dropdown-item" href="top.htm">Tops</a>
+                      <a class="dropdown-item" href="skirt.htm">Skirts</a>
+                      <a class="dropdown-item" href="gown.htm">Gowns</a>
+                      <a class="dropdown-item" href="trouser.htm">Trousers</a>
+                      <a class="dropdown-item" href="other.htm">Others</a>
+                  </div>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in/up</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      UNLEASH  <br>
+                      <span>
+                        YOUR STYLE
+                      </span>
+                    </h1>
+                    <p>
+                      Discover the latest trends in fashion
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2" style="color: #000;">Categories</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      CHIC <br>
+                      <span>
+                        & UNIQUE
+                      </span>
+                    </h1>
+                    <p>
+                      Stand out  with our SIGNATURE 
+                      Collections
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2" style="color: #000;">Categories</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Luxury <br>
+                      <span>
+                        Without Labels
+                      </span>
+                    </h1>
+                    <p>
+                      Embrace luxury that lets your individuality Shine without needs for labels
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2" style="color: #000;">Categories</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  
+
+  <section class="this-brand-section">
+    <section class="brand-section">
+        <div class="brand-header">
+            <img src="logo.png" alt="Brand Logo" class="logo">
+            <h1>Sort By Categories</h1>
+        </div>
+        <div class="image-container">
+            <div class="item">
+                <div class="circle">
+                    <img src="images/tops/2.png" alt="Top">
+                </div>
+                <div class="item-text"><a href="top.htm" style="color: #fff;">Top</a></div>
+            </div>
+            <div class="item">
+                <div class="circle">
+                    <img src="images/gowns/35.png" alt="Gown">
+                </div>
+                <div class="item-text"><a href="gown.htm" style="color: #fff;">Gown</a></div>
+            </div>
+            <div class="item">
+                <div class="circle">
+                    <img src="images/skirts/6.png" alt="Skirt">
+                </div>
+                <div class="item-text"><a href="skirt.htm" style="color: #fff;">Skirt</a></div>
+            </div>
+            <div class="item">
+                <div class="circle">
+                    <img src="images/trousers/11.png" alt="Trouser">
+                </div>
+                <div class="item-text"><a href="trouser.htm"style="color: #fff;">Trouser</a></div>
+            </div>
+            
+            <div class="item">
+                <div class="circle">
+                    <img src="images/others/6.png" alt="Others">
+                </div>
+                <div class="item-text"><a href="other.htm"style="color: #fff;">Others</a></div>
+            </div>
+        </div>
+    </section>
+    </section> 
+    <section class="carousel-section">
+        <div class="carousel-wrapper">
+          <div class="carousel-container">
+              <div class="carousel-header">
+                  <h2 id="top-picks">Tops</h2>
+                  <div class="slide-text"><a href="top.htm">Slide Right</a>&#10132;</div>
+              </div>
+              <div class="carousel-description">
+                  Polos , shirts, chiffon - tops for MEN and WOMEN. slide image right
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <img src="brth/1.png" alt="Image 1" class="rotating-img" data-images="images/tops/41.png,images/tops/38.png" data-interval="3000">
+                      <img src="brth/2.png" alt="Image 2" class="rotating-img" data-images="images/tops/2.png,images/tops/1.png" data-interval="4000">
+                      <img src="brth/3.png" alt="Image 3" class="rotating-img" data-images="images/tops/3.png,images/tops/33.png" data-interval="5000">
+                      <img src="brth/4.png" alt="Image 4" class="rotating-img" data-images="images/tops/4.png,images/tops/34.png" data-interval="3500">
+                      <img src="brth/5.png" alt="Image 5" class="rotating-img" data-images="images/tops/5.png,images/tops/35.png" data-interval="4500">
+                      <img src="brth/6.png" alt="Image 6" class="rotating-img" data-images="images/tops/6.png,images/tops/36.png" data-interval="5500">
+                      <img src="brth/7.png" alt="Image 7" class="rotating-img" data-images="images/tops/7.png,images/tops/37.png" data-interval="3800">
+                      <img src="brth/8.png" alt="Image 8" class="rotating-img" data-images="images/tops/8.png,images/tops/38.png" data-interval="4800">
+                      <img src="brth/9.png" alt="Image 9" class="rotating-img" data-images="images/tops/9.png,images/tops/39.png" data-interval="5800">
+                      <img src="brth/1.png" alt="Image 10" class="rotating-img" data-images="images/tops/10.png,images/tops/20.png" data-interval="3600">
+                      <a href="top.htm" class="view-more">View More</a>
+                  </div>
+              </div>
+              <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+          <div class="carousel-wrapper">
+          <div class="carousel-container">
+              <div class="carousel-header">
+                  <h2 id="top-picks">GOWNS</h2>
+                  <div class="slide-text"><a href="gown.htm">Slide Right</a>&#10132;</div>
+              </div>
+              <div class="carousel-description">
+                  GOWNS: Ladies, Teens, and Moms - exotic and  casual styles. slide image right
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <img src="brth/1.png" alt="Image 1" class="rotating-img" data-images="images/gowns/20.png,images/gowns/26.png" data-interval="3000">
+                      <img src="brth/2.png" alt="Image 2" class="rotating-img" data-images="images/gowns/47.png,images/gowns/27.png" data-interval="4000">
+                      <img src="brth/3.png" alt="Image 3" class="rotating-img" data-images="images/gowns/46.png,images/gowns/28.png" data-interval="5000">
+                      <img src="brth/4.png" alt="Image 4" class="rotating-img" data-images="images/gowns/45.png,images/gowns/29.png" data-interval="3500">
+                      <img src="brth/5.png" alt="Image 5" class="rotating-img" data-images="images/gowns/44.png,images/gowns/30.png" data-interval="4500">
+                      <img src="brth/6.png" alt="Image 6" class="rotating-img" data-images="images/gowns/43.png,images/gowns/31.png" data-interval="5500">
+                      <img src="brth/7.png" alt="Image 7" class="rotating-img" data-images="images/gowns/42.png,images/gowns/32.png" data-interval="3800">
+                      <img src="brth/8.png" alt="Image 8" class="rotating-img" data-images="images/gowns/41.png,images/gowns/33.png" data-interval="4800">
+                      <img src="brth/9.png" alt="Image 9" class="rotating-img" data-images="images/gowns/40.png,images/gowns/34.png" data-interval="5800">
+                      <img src="brth/1.png" alt="Image 10" class="rotating-img" data-images="images/gowns/39.png,images/gowns/35.png" data-interval="3600">
+                      <a href="gown.htm" class="view-more">View More</a>
+                  </div>
+              </div>
+              <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+          <div class="carousel-wrapper">
+          <div class="carousel-container">
+              <div class="carousel-header">
+                  <h2 id="top-picks">TROUSERS</h2>
+                  <div class="slide-text"><a href="trouser.htm">Slide Right</a>&#10132;</div>
+              </div>
+              <div class="carousel-description">
+                  Men's and Female's trousers - BF jeans, skinny, baggy, shorts, and more. Every variety you can imagine.
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <img src="brth/1.png" alt="Image 1" class="rotating-img" data-images="images/trousers/1.png,images/trousers/40.png" data-interval="3000">
+                      <img src="brth/2.png" alt="Image 2" class="rotating-img" data-images="images/trousers//2.png,images/trousers/42.png" data-interval="4000">
+                      <img src="brth/3.png" alt="Image 3" class="rotating-img" data-images="images/trousers/3.png,images/trousers/43.png" data-interval="5000">
+                      <img src="brth/4.png" alt="Image 4" class="rotating-img" data-images="images/trousers/6.png,images/trousers/44.png" data-interval="3500">
+                      <img src="brth/5.png" alt="Image 5" class="rotating-img" data-images="images/trousers/7.png,images/trousers/45.png" data-interval="4500">
+                      <img src="brth/6.png" alt="Image 6" class="rotating-img" data-images="images/trousers/8.png,images/trousers/46.png" data-interval="5500">
+                      <img src="brth/7.png" alt="Image 7" class="rotating-img" data-images="images/trousers/11.png,images/trousers/20.png" data-interval="3800">
+                      <img src="brth/8.png" alt="Image 8" class="rotating-img" data-images="images/trousers/12.png,images/trousers/21.png" data-interval="4800">
+                      <img src="brth/9.png" alt="Image 9" class="rotating-img" data-images="images/trousers/13.png,images/trousers/22.png" data-interval="5800">
+                      <img src="brth/1.png" alt="Image 10" class="rotating-img" data-images="images/trousers/14.png,images/trousers/23.png" data-interval="3600">
+                      <a href="trouser.htm" class="view-more">View More</a>
+                  </div>
+              </div>
+              <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+            <div class="carousel-wrapper">
+          <div class="carousel-container">
+              <div class="carousel-header">
+                  <h2 id="top-picks">SKIRTS</h2>
+                  <div class="slide-text"><a href="skirt.htm">Slide Right</a>&#10132;</div>
+              </div>
+              <div class="carousel-description">
+                  Whether it's corporate, classy, casual, suit, printing, long. take a glance of our top picks for you
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <img src="brth/1.png" alt="Image 1" class="rotating-img" data-images="images/skirts/3.png,images/skirts/28.png" data-interval="3000">
+                      <img src="brth/2.png" alt="Image 2" class="rotating-img" data-images="images/skirts/9.png,images/skirts/29.png" data-interval="4000">
+                      <img src="brth/3.png" alt="Image 3" class="rotating-img" data-images="images/skirts/12.png,images/skirts/30.png" data-interval="5000">
+                      <img src="brth/4.png" alt="Image 4" class="rotating-img" data-images="images/skirts/6.png,images/skirts/32.png" data-interval="3500">
+                      <img src="brth/5.png" alt="Image 5" class="rotating-img" data-images="images/skirts/15.png,images/skirts/33.png" data-interval="4500">
+                      <img src="brth/6.png" alt="Image 6" class="rotating-img" data-images="images/skirts/16.png,images/skirts/34.png" data-interval="5500">
+                      <img src="brth/7.png" alt="Image 7" class="rotating-img" data-images="images/skirts/13.png,images/skirts/38.png" data-interval="3800">
+                      <img src="brth/8.png" alt="Image 8" class="rotating-img" data-images="images/skirts/19.png,images/skirts/39.png" data-interval="4800">
+                      <img src="brth/9.png" alt="Image 9" class="rotating-img" data-images="images/skirts/20.png,images/skirts/35.png" data-interval="5800">
+                      <img src="brth/1.png" alt="Image 10" class="rotating-img" data-images="images/skirts/21.png,images/skirts/41.png" data-interval="3600">
+                      <a href="skirt.htm" class="view-more">View More</a>
+                  </div>
+              </div>
+              <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+          <div class="carousel-wrapper">
+          <div class="carousel-container">
+              <div class="carousel-header">
+                  <h2 id="top-picks">OTHERS</h2>
+                  <div class="slide-text"><a href="other.htm">Slide Right</a>&#10132;</div>
+              </div>
+              <div class="carousel-description">
+                Find Jamsuits, Scarfs, Belts, Ropes, bags, caps, e.t.c. - all at affordable prices    
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                      <img src="brth/1.png" alt="Image 1" class="rotating-img" data-images="images/others/1.png,images/others/11.png" data-interval="3000">
+                      <img src="brth/2.png" alt="Image 2" class="rotating-img" data-images="images/others/2.png,images/others/12.png" data-interval="4000">
+                      <img src="brth/3.png" alt="Image 3" class="rotating-img" data-images="images/others/3.png,images/others/13.png" data-interval="5000">
+                      <img src="brth/4.png" alt="Image 4" class="rotating-img" data-images="images/others/4.png,images/others/14.png" data-interval="3500">
+                      <img src="brth/5.png" alt="Image 5" class="rotating-img" data-images="images/others/5.png,images/others/15.png" data-interval="4500">
+                      <img src="brth/6.png" alt="Image 6" class="rotating-img" data-images="images/others/6.png,images/others/16.png" data-interval="5500">
+                      <img src="brth/7.png" alt="Image 7" class="rotating-img" data-images="images/others/7.png,images/others/17.png" data-interval="3800">
+                      <img src="brth/8.png" alt="Image 8" class="rotating-img" data-images="images/others/8.png,images/others/18.png" data-interval="4800">
+                      <img src="brth/9.png" alt="Image 9" class="rotating-img" data-images="images/others/9.png,images/others/19.png" data-interval="5800">
+                      <img src="brth/1.png" alt="Image 10" class="rotating-img" data-images="images/others/10.png,images/others/20.png" data-interval="3600">
+                      <a href="other.htm" class="view-more">View More</a>
+                  </div>
+              </div>
+              <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+      </section>
+
+  <!-- info section -->
+    <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+              <span style="color: #f1db25;">
+                VIOLET F-Boutique
+              </span>
+            </a>
+            <p>
+             This website is dedicated in celebration of my mom's 2024 birthday, honoring HER strength, love, and unwavering inspiration.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5 style="color: #f1db25;">
+              How To Use
+            </h5>
+            <p>
+              Use the category menu at the top of the website to navigate. Each category is displayed in sections below. On phones, swipe right to blowse; on PCs, use the ash-colored slider below the images. click "View More"for additional options.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5 style="color: #f1db25;">
+              Contact Us
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+               No 12 Alozie St. Eyimba Off Ariria Int'l Market, Osisioma L.G.A.  Aba, Abia State. Nigeria.
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                <a href="tel:+234 8063904779">
+                  Call Us: +234 8063904779
+                </a>
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                <a href="mailto:nwigwevio@gmail.com">
+                  Email Us: nwigwevio@gmail.com
+                </a>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5 style="color: #f1db25;">
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+      <a href="https://html.design/" style="color: #f1db25;">HOLIBOI</a> 
+    </p>
+  </footer>
+  <!-- footer section -->
+  <script>
+    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    const carousel = document.querySelector('.carousel');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const rotatingImages = document.querySelectorAll('.rotating-img');
+
+    const scrollAmount = carouselWrapper.clientWidth;
+    let currentScroll = 0;
+
+    nextBtn.addEventListener('click', () => {
+        if (currentScroll < carousel.scrollWidth - carouselWrapper.clientWidth) {
+            currentScroll += scrollAmount;
+            carouselWrapper.scrollTo({
+                left: currentScroll,
+                behavior: 'smooth'
+            });
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentScroll > 0) {
+            currentScroll -= scrollAmount;
+            carouselWrapper.scrollTo({
+                left: currentScroll,
+                behavior: 'smooth'
+            });
+        }
+    });
+
+    // Function to rotate images
+    rotatingImages.forEach(img => {
+        const images = img.dataset.images.split(',');
+        const interval = parseInt(img.dataset.interval);
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            img.src = images[currentIndex];
+        }, interval);
+    });
+</script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
